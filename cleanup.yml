@@ -1,0 +1,5 @@
+---
+- hosts: patching 
+- tasks:
+  - name: Remove old kernels from the OS keeping only the last most recent two
+    command: /usr/bin/package-cleanup --oldkernels --count=2 -y 

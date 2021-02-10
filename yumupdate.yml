@@ -1,0 +1,8 @@
+---
+- hosts: testservers
+
+  tasks:
+    - name: upgrade all package
+      yum:
+        name: '*'
+        state: latest

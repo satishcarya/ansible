@@ -1,0 +1,739 @@
+2021-01-27 05:52:41,539 p=2258 u=root n=ansible | PLAY [testservers1] *********************************************************************************************************************
+2021-01-27 05:52:41,572 p=2258 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-01-27 05:52:47,006 p=2258 u=root n=ansible | ok: [192.168.68.137]
+2021-01-27 05:52:47,028 p=2258 u=root n=ansible | ok: [192.168.68.136]
+2021-01-27 05:52:47,112 p=2258 u=root n=ansible | TASK [install package] ******************************************************************************************************************
+2021-01-27 05:52:57,616 p=2258 u=root n=ansible | changed: [192.168.68.137]
+2021-01-27 05:52:57,666 p=2258 u=root n=ansible | changed: [192.168.68.136]
+2021-01-27 05:52:57,671 p=2258 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-01-27 05:52:57,672 p=2258 u=root n=ansible | 192.168.68.136             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 05:52:57,672 p=2258 u=root n=ansible | 192.168.68.137             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 05:56:47,313 p=2319 u=root n=ansible | PLAY [testservers1] *********************************************************************************************************************
+2021-01-27 05:56:47,350 p=2319 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-01-27 05:56:52,783 p=2319 u=root n=ansible | ok: [192.168.68.136]
+2021-01-27 05:56:52,804 p=2319 u=root n=ansible | ok: [192.168.68.137]
+2021-01-27 05:56:52,887 p=2319 u=root n=ansible | TASK [install package] ******************************************************************************************************************
+2021-01-27 05:57:07,929 p=2319 u=root n=ansible | changed: [192.168.68.136]
+2021-01-27 05:57:08,012 p=2319 u=root n=ansible | changed: [192.168.68.137]
+2021-01-27 05:57:08,017 p=2319 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-01-27 05:57:08,018 p=2319 u=root n=ansible | 192.168.68.136             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 05:57:08,018 p=2319 u=root n=ansible | 192.168.68.137             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 05:57:58,915 p=2376 u=root n=ansible | PLAY [testservers1] *********************************************************************************************************************
+2021-01-27 05:57:58,948 p=2376 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-01-27 05:58:03,661 p=2376 u=root n=ansible | ok: [192.168.68.137]
+2021-01-27 05:58:03,689 p=2376 u=root n=ansible | ok: [192.168.68.136]
+2021-01-27 05:58:03,770 p=2376 u=root n=ansible | TASK [dkdkdkdkdkdk] *********************************************************************************************************************
+2021-01-27 05:58:08,481 p=2376 u=root n=ansible | ok: [192.168.68.136]
+2021-01-27 05:58:08,491 p=2376 u=root n=ansible | ok: [192.168.68.137]
+2021-01-27 05:58:08,496 p=2376 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-01-27 05:58:08,497 p=2376 u=root n=ansible | 192.168.68.136             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 05:58:08,497 p=2376 u=root n=ansible | 192.168.68.137             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 12:22:33,152 p=3067 u=root n=ansible | PLAY [macservers] ***********************************************************************************************************************
+2021-01-27 12:22:33,209 p=3067 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-01-27 12:22:39,565 p=3067 u=root n=ansible | fatal: [192.168.68.141]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '192.168.68.141' (ECDSA) to the list of known hosts.\r\nPermission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2021-01-27 12:23:21,885 p=3067 u=root n=ansible |  [ERROR]: User interrupted execution
+
+2021-01-27 12:25:45,907 p=3262 u=root n=ansible | PLAY [macservers] ***********************************************************************************************************************
+2021-01-27 12:25:45,952 p=3262 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-01-27 12:25:46,318 p=3262 u=root n=ansible | fatal: [192.168.68.141]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2021-01-27 12:25:51,227 p=3262 u=root n=ansible | ok: [192.168.68.157]
+2021-01-27 12:25:51,252 p=3262 u=root n=ansible | ok: [192.168.68.142]
+2021-01-27 12:25:51,338 p=3262 u=root n=ansible | TASK [upgrade all package] **************************************************************************************************************
+2021-01-27 12:34:01,643 p=3262 u=root n=ansible | changed: [192.168.68.142]
+2021-01-27 12:34:34,837 p=3262 u=root n=ansible | changed: [192.168.68.157]
+2021-01-27 12:34:34,847 p=3262 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-01-27 12:34:34,848 p=3262 u=root n=ansible | 192.168.68.141             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 12:34:34,849 p=3262 u=root n=ansible | 192.168.68.142             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 12:34:34,849 p=3262 u=root n=ansible | 192.168.68.157             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 12:41:02,291 p=3369 u=root n=ansible | PLAY [macservers] ***********************************************************************************************************************
+2021-01-27 12:41:02,326 p=3369 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-01-27 12:41:08,691 p=3369 u=root n=ansible | ok: [192.168.68.157]
+2021-01-27 12:41:08,885 p=3369 u=root n=ansible | ok: [192.168.68.142]
+2021-01-27 12:41:13,506 p=3369 u=root n=ansible | ok: [192.168.68.141]
+2021-01-27 12:41:13,618 p=3369 u=root n=ansible | TASK [upgrade all package] **************************************************************************************************************
+2021-01-27 12:41:20,772 p=3369 u=root n=ansible | ok: [192.168.68.157]
+2021-01-27 12:41:20,839 p=3369 u=root n=ansible | ok: [192.168.68.142]
+2021-01-27 12:58:59,289 p=3369 u=root n=ansible | changed: [192.168.68.141]
+2021-01-27 12:58:59,296 p=3369 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-01-27 12:58:59,296 p=3369 u=root n=ansible | 192.168.68.141             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 12:58:59,297 p=3369 u=root n=ansible | 192.168.68.142             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 12:58:59,297 p=3369 u=root n=ansible | 192.168.68.157             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 12:59:53,476 p=3464 u=root n=ansible | PLAY [macservers] ***********************************************************************************************************************
+2021-01-27 12:59:53,511 p=3464 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-01-27 12:59:58,331 p=3464 u=root n=ansible | ok: [192.168.68.157]
+2021-01-27 12:59:58,693 p=3464 u=root n=ansible | ok: [192.168.68.142]
+2021-01-27 13:00:04,660 p=3464 u=root n=ansible | ok: [192.168.68.141]
+2021-01-27 13:00:04,755 p=3464 u=root n=ansible | TASK [Check the uptime prior reboot] ****************************************************************************************************
+2021-01-27 13:00:07,071 p=3464 u=root n=ansible | changed: [192.168.68.141]
+2021-01-27 13:00:07,097 p=3464 u=root n=ansible | changed: [192.168.68.142]
+2021-01-27 13:00:07,100 p=3464 u=root n=ansible | changed: [192.168.68.157]
+2021-01-27 13:00:07,187 p=3464 u=root n=ansible | TASK [debug] ****************************************************************************************************************************
+2021-01-27 13:00:07,545 p=3464 u=root n=ansible | ok: [192.168.68.141] => {
+    "msg": " 10:56:44 up 47 min,  2 users,  load average: 0.76, 1.48, 1.01"
+}
+2021-01-27 13:00:07,563 p=3464 u=root n=ansible | ok: [192.168.68.142] => {
+    "msg": " 10:56:44 up 47 min,  2 users,  load average: 0.00, 0.01, 0.11"
+}
+2021-01-27 13:00:07,661 p=3464 u=root n=ansible | ok: [192.168.68.157] => {
+    "msg": " 10:56:44 up 47 min,  3 users,  load average: 0.08, 0.03, 0.18"
+}
+2021-01-27 13:00:07,753 p=3464 u=root n=ansible | TASK [Reboot node and stop polling.] ****************************************************************************************************
+2021-01-27 13:00:10,325 p=3464 u=root n=ansible | changed: [192.168.68.142]
+2021-01-27 13:00:10,382 p=3464 u=root n=ansible | changed: [192.168.68.157]
+2021-01-27 13:00:10,448 p=3464 u=root n=ansible | changed: [192.168.68.141]
+2021-01-27 13:00:10,570 p=3464 u=root n=ansible | TASK [wait for host to finish reb00t] ***************************************************************************************************
+2021-01-27 13:00:48,645 p=3464 u=root n=ansible | ok: [192.168.68.142]
+2021-01-27 13:00:50,736 p=3464 u=root n=ansible | ok: [192.168.68.141]
+2021-01-27 13:01:09,657 p=3464 u=root n=ansible | ok: [192.168.68.157]
+2021-01-27 13:01:09,761 p=3464 u=root n=ansible | TASK [Check the uptime post reboot] *****************************************************************************************************
+2021-01-27 13:01:12,036 p=3464 u=root n=ansible | changed: [192.168.68.141]
+2021-01-27 13:01:12,126 p=3464 u=root n=ansible | changed: [192.168.68.142]
+2021-01-27 13:01:12,429 p=3464 u=root n=ansible | changed: [192.168.68.157]
+2021-01-27 13:01:12,527 p=3464 u=root n=ansible | TASK [debug] ****************************************************************************************************************************
+2021-01-27 13:01:12,875 p=3464 u=root n=ansible | ok: [192.168.68.141] => {
+    "msg": " 10:57:44 up 0 min,  1 user,  load average: 1.23, 0.34, 0.12"
+}
+2021-01-27 13:01:12,913 p=3464 u=root n=ansible | ok: [192.168.68.142] => {
+    "msg": " 10:57:44 up 0 min,  1 user,  load average: 0.66, 0.20, 0.07"
+}
+2021-01-27 13:01:13,000 p=3464 u=root n=ansible | ok: [192.168.68.157] => {
+    "msg": " 10:57:42 up 0 min,  1 user,  load average: 0.36, 0.09, 0.03"
+}
+2021-01-27 13:01:13,011 p=3464 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-01-27 13:01:13,012 p=3464 u=root n=ansible | 192.168.68.141             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 13:01:13,013 p=3464 u=root n=ansible | 192.168.68.142             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 13:01:13,013 p=3464 u=root n=ansible | 192.168.68.157             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 13:01:27,277 p=3700 u=root n=ansible | PLAY [macservers] ***********************************************************************************************************************
+2021-01-27 13:01:27,314 p=3700 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-01-27 13:01:31,796 p=3700 u=root n=ansible | ok: [192.168.68.157]
+2021-01-27 13:01:31,924 p=3700 u=root n=ansible | ok: [192.168.68.142]
+2021-01-27 13:01:36,302 p=3700 u=root n=ansible | ok: [192.168.68.141]
+2021-01-27 13:01:36,402 p=3700 u=root n=ansible | TASK [Check the uptime prior reboot] ****************************************************************************************************
+2021-01-27 13:01:38,548 p=3700 u=root n=ansible | changed: [192.168.68.157]
+2021-01-27 13:01:38,595 p=3700 u=root n=ansible | changed: [192.168.68.142]
+2021-01-27 13:01:38,606 p=3700 u=root n=ansible | changed: [192.168.68.141]
+2021-01-27 13:01:38,719 p=3700 u=root n=ansible | TASK [debug] ****************************************************************************************************************************
+2021-01-27 13:01:39,069 p=3700 u=root n=ansible | ok: [192.168.68.141] => {
+    "msg": " 10:58:09 up 1 min,  1 user,  load average: 1.05, 0.36, 0.13"
+}
+2021-01-27 13:01:39,098 p=3700 u=root n=ansible | ok: [192.168.68.142] => {
+    "msg": " 10:58:09 up 1 min,  1 user,  load average: 0.43, 0.18, 0.06"
+}
+2021-01-27 13:01:39,199 p=3700 u=root n=ansible | ok: [192.168.68.157] => {
+    "msg": " 10:58:09 up 1 min,  1 user,  load average: 0.24, 0.09, 0.03"
+}
+2021-01-27 13:01:39,289 p=3700 u=root n=ansible | TASK [Reboot node and stop polling.] ****************************************************************************************************
+2021-01-27 13:01:41,755 p=3700 u=root n=ansible | changed: [192.168.68.142]
+2021-01-27 13:01:41,821 p=3700 u=root n=ansible | changed: [192.168.68.157]
+2021-01-27 13:01:41,922 p=3700 u=root n=ansible | changed: [192.168.68.141]
+2021-01-27 13:01:42,017 p=3700 u=root n=ansible | TASK [wait for host to finish reb00t] ***************************************************************************************************
+2021-01-27 13:02:21,026 p=3700 u=root n=ansible | ok: [192.168.68.141]
+2021-01-27 13:02:21,971 p=3700 u=root n=ansible | ok: [192.168.68.142]
+2021-01-27 13:02:26,941 p=3700 u=root n=ansible | ok: [192.168.68.157]
+2021-01-27 13:02:27,043 p=3700 u=root n=ansible | TASK [Check the uptime post reboot] *****************************************************************************************************
+2021-01-27 13:02:29,251 p=3700 u=root n=ansible | changed: [192.168.68.141]
+2021-01-27 13:02:29,496 p=3700 u=root n=ansible | changed: [192.168.68.142]
+2021-01-27 13:02:29,746 p=3700 u=root n=ansible | changed: [192.168.68.157]
+2021-01-27 13:02:29,844 p=3700 u=root n=ansible | TASK [debug] ****************************************************************************************************************************
+2021-01-27 13:02:30,209 p=3700 u=root n=ansible | ok: [192.168.68.141] => {
+    "msg": " 10:58:55 up 0 min,  1 user,  load average: 1.00, 0.24, 0.08"
+}
+2021-01-27 13:02:30,217 p=3700 u=root n=ansible | ok: [192.168.68.142] => {
+    "msg": " 10:58:56 up 0 min,  1 user,  load average: 0.39, 0.10, 0.03"
+}
+2021-01-27 13:02:30,308 p=3700 u=root n=ansible | ok: [192.168.68.157] => {
+    "msg": " 10:58:54 up 0 min,  1 user,  load average: 0.63, 0.14, 0.05"
+}
+2021-01-27 13:02:30,315 p=3700 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-01-27 13:02:30,316 p=3700 u=root n=ansible | 192.168.68.141             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 13:02:30,316 p=3700 u=root n=ansible | 192.168.68.142             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 13:02:30,317 p=3700 u=root n=ansible | 192.168.68.157             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-01-27 13:04:08,409 p=3916 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: No JSON object could be decoded
+
+Syntax Error while loading YAML.
+  found a tab character that violate intendation
+
+The error appears to be in '/etc/ansible/demo1.yml': line 3, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+ - hosts: macservers
+	tasks :
+^ here
+There appears to be a tab character at the start of the line.
+
+YAML does not use tabs for formatting. Tabs should be replaced with spaces.
+
+For example:
+    - name: update tooling
+      vars:
+        version: 1.2.3
+#    ^--- there is a tab there.
+
+Should be written as:
+    - name: update tooling
+      vars:
+        version: 1.2.3
+# ^--- all spaces here.
+
+2021-01-27 13:05:03,964 p=3930 u=root n=ansible | PLAY [macservers] ***********************************************************************************************************************
+2021-01-27 13:05:03,999 p=3930 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-01-27 13:05:10,508 p=3930 u=root n=ansible | ok: [192.168.68.157]
+2021-01-27 13:05:10,944 p=3930 u=root n=ansible | ok: [192.168.68.142]
+2021-01-27 13:05:14,901 p=3930 u=root n=ansible | ok: [192.168.68.141]
+2021-01-27 13:05:15,010 p=3930 u=root n=ansible | TASK [install package] ******************************************************************************************************************
+2021-01-27 13:05:21,260 p=3930 u=root n=ansible | fatal: [192.168.68.157]: FAILED! => {"changed": false, "msg": "No package matching 'htop' found available, installed or updated", "rc": 126, "results": ["No package matching 'htop' found available, installed or updated"]}
+2021-01-27 13:05:21,278 p=3930 u=root n=ansible | fatal: [192.168.68.142]: FAILED! => {"changed": false, "msg": "No package matching 'htop' found available, installed or updated", "rc": 126, "results": ["No package matching 'htop' found available, installed or updated"]}
+2021-01-27 13:05:21,292 p=3930 u=root n=ansible | fatal: [192.168.68.141]: FAILED! => {"changed": false, "msg": "No package matching 'htop' found available, installed or updated", "rc": 126, "results": ["No package matching 'htop' found available, installed or updated"]}
+2021-01-27 13:05:21,295 p=3930 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-01-27 13:05:21,295 p=3930 u=root n=ansible | 192.168.68.141             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-01-27 13:05:21,296 p=3930 u=root n=ansible | 192.168.68.142             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-01-27 13:05:21,296 p=3930 u=root n=ansible | 192.168.68.157             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-01-27 13:12:25,655 p=4017 u=root n=ansible | PLAY [macservers] ***********************************************************************************************************************
+2021-01-27 13:12:25,688 p=4017 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-01-27 13:12:32,150 p=4017 u=root n=ansible | ok: [192.168.68.142]
+2021-01-27 13:12:33,217 p=4017 u=root n=ansible | ok: [192.168.68.157]
+2021-01-27 13:12:36,704 p=4017 u=root n=ansible | ok: [192.168.68.141]
+2021-01-27 13:12:36,807 p=4017 u=root n=ansible | TASK [install package] ******************************************************************************************************************
+2021-01-27 13:12:42,598 p=4017 u=root n=ansible | fatal: [192.168.68.142]: FAILED! => {"changed": false, "msg": "No package matching 'htop' found available, installed or updated", "rc": 126, "results": ["No package matching 'htop' found available, installed or updated"]}
+2021-01-27 13:12:42,655 p=4017 u=root n=ansible | fatal: [192.168.68.141]: FAILED! => {"changed": false, "msg": "No package matching 'htop' found available, installed or updated", "rc": 126, "results": ["No package matching 'htop' found available, installed or updated"]}
+2021-01-27 13:12:44,121 p=4017 u=root n=ansible | fatal: [192.168.68.157]: FAILED! => {"changed": false, "msg": "No package matching 'htop' found available, installed or updated", "rc": 126, "results": ["No package matching 'htop' found available, installed or updated"]}
+2021-01-27 13:12:44,124 p=4017 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-01-27 13:12:44,124 p=4017 u=root n=ansible | 192.168.68.141             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-01-27 13:12:44,125 p=4017 u=root n=ansible | 192.168.68.142             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-01-27 13:12:44,125 p=4017 u=root n=ansible | 192.168.68.157             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-02-09 07:26:41,829 p=1880 u=root n=ansible | PLAY [testservers] **********************************************************************************************************************
+2021-02-09 07:26:41,875 p=1880 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-02-09 07:26:42,430 p=1880 u=root n=ansible | fatal: [192.168.68.135]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.68.135 port 22: Connection refused", "unreachable": true}
+2021-02-09 07:26:42,438 p=1880 u=root n=ansible | fatal: [192.168.68.137]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.68.137 port 22: Connection refused", "unreachable": true}
+2021-02-09 07:26:45,058 p=1880 u=root n=ansible | fatal: [192.168.68.136]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.68.136 port 22: No route to host", "unreachable": true}
+2021-02-09 07:26:45,061 p=1880 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-02-09 07:26:45,062 p=1880 u=root n=ansible | 192.168.68.135             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 07:26:45,062 p=1880 u=root n=ansible | 192.168.68.136             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 07:26:45,063 p=1880 u=root n=ansible | 192.168.68.137             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 07:27:10,712 p=1900 u=root n=ansible | PLAY [testservers] **********************************************************************************************************************
+2021-02-09 07:27:10,749 p=1900 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-02-09 07:27:18,013 p=1900 u=root n=ansible | ok: [192.168.68.144]
+2021-02-09 07:27:18,037 p=1900 u=root n=ansible | ok: [192.168.68.143]
+2021-02-09 20:22:20,669 p=3187 u=root n=ansible | PLAY [patching] ******************************************************************************************************************
+2021-02-09 20:22:20,704 p=3187 u=root n=ansible | TASK [Gathering Facts] ***********************************************************************************************************
+2021-02-09 20:22:25,402 p=3187 u=root n=ansible | fatal: [192.168.68.134]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '192.168.68.134' (ECDSA) to the list of known hosts.\r\nPermission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2021-02-09 20:22:26,755 p=3187 u=root n=ansible | ok: [192.168.68.144]
+2021-02-09 20:22:26,900 p=3187 u=root n=ansible | ok: [192.168.68.143]
+2021-02-09 20:28:01,889 p=3187 u=root n=ansible |  [ERROR]: User interrupted execution
+
+2021-02-09 20:30:31,658 p=3559 u=root n=ansible | PLAY [patching] ******************************************************************************************************************
+2021-02-09 20:30:31,695 p=3559 u=root n=ansible | TASK [Gathering Facts] ***********************************************************************************************************
+2021-02-09 20:30:40,221 p=3559 u=root n=ansible | ok: [192.168.68.145]
+2021-02-09 20:30:40,335 p=3559 u=root n=ansible | ok: [192.168.68.144]
+2021-02-09 20:30:40,390 p=3559 u=root n=ansible | ok: [192.168.68.134]
+2021-02-09 20:30:40,600 p=3559 u=root n=ansible | ok: [192.168.68.143]
+2021-02-09 20:30:45,950 p=3559 u=root n=ansible | ok: [192.168.68.157]
+2021-02-09 20:30:46,093 p=3559 u=root n=ansible | ok: [192.168.68.142]
+2021-02-09 20:30:46,526 p=3559 u=root n=ansible | ok: [192.168.68.141]
+2021-02-09 20:30:46,609 p=3559 u=root n=ansible | TASK [upgrade all package] *******************************************************************************************************
+2021-02-09 20:32:19,226 p=3559 u=root n=ansible | changed: [192.168.68.141]
+2021-02-09 20:37:40,698 p=3559 u=root n=ansible | changed: [192.168.68.157]
+2021-02-09 20:40:16,330 p=3559 u=root n=ansible | changed: [192.168.68.142]
+2021-02-09 20:40:19,537 p=3559 u=root n=ansible | changed: [192.168.68.143]
+2021-02-09 20:46:00,860 p=3559 u=root n=ansible | changed: [192.168.68.144]
+2021-02-09 20:52:20,513 p=3559 u=root n=ansible | changed: [192.168.68.134]
+2021-02-09 21:03:03,531 p=3559 u=root n=ansible | changed: [192.168.68.145]
+2021-02-09 21:03:03,543 p=3559 u=root n=ansible | PLAY RECAP ***********************************************************************************************************************
+2021-02-09 21:03:03,543 p=3559 u=root n=ansible | 192.168.68.134             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:03:03,544 p=3559 u=root n=ansible | 192.168.68.141             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:03:03,555 p=3559 u=root n=ansible | 192.168.68.142             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:03:03,562 p=3559 u=root n=ansible | 192.168.68.143             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:03:03,563 p=3559 u=root n=ansible | 192.168.68.144             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:03:03,563 p=3559 u=root n=ansible | 192.168.68.145             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:03:03,564 p=3559 u=root n=ansible | 192.168.68.157             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:05:12,236 p=26064 u=root n=ansible | PLAY [patching] ******************************************************************************************************************
+2021-02-09 21:05:12,278 p=26064 u=root n=ansible | TASK [Gathering Facts] ***********************************************************************************************************
+2021-02-09 21:05:18,942 p=26064 u=root n=ansible | ok: [192.168.68.134]
+2021-02-09 21:05:19,045 p=26064 u=root n=ansible | ok: [192.168.68.145]
+2021-02-09 21:05:19,125 p=26064 u=root n=ansible | ok: [192.168.68.144]
+2021-02-09 21:05:19,252 p=26064 u=root n=ansible | ok: [192.168.68.157]
+2021-02-09 21:05:25,252 p=26064 u=root n=ansible | ok: [192.168.68.142]
+2021-02-09 21:05:28,947 p=26064 u=root n=ansible | ok: [192.168.68.141]
+2021-02-09 21:05:29,002 p=26064 u=root n=ansible | TASK [Check the uptime prior reboot] *********************************************************************************************
+2021-02-09 21:05:32,302 p=26064 u=root n=ansible | changed: [192.168.68.134]
+2021-02-09 21:05:32,453 p=26064 u=root n=ansible | changed: [192.168.68.144]
+2021-02-09 21:05:32,467 p=26064 u=root n=ansible | changed: [192.168.68.145]
+2021-02-09 21:05:32,483 p=26064 u=root n=ansible | changed: [192.168.68.157]
+2021-02-09 21:05:32,606 p=26064 u=root n=ansible | changed: [192.168.68.141]
+2021-02-09 21:05:33,695 p=26064 u=root n=ansible | changed: [192.168.68.142]
+2021-02-09 21:05:33,746 p=26064 u=root n=ansible | TASK [debug] *********************************************************************************************************************
+2021-02-09 21:05:34,533 p=26064 u=root n=ansible | ok: [192.168.68.144] => {
+    "msg": " 06:35:19 up 1 day,  3:43,  2 users,  load average: 0.00, 0.02, 0.14"
+}
+2021-02-09 21:05:34,536 p=26064 u=root n=ansible | ok: [192.168.68.134] => {
+    "msg": " 03:26:38 up 46 min,  2 users,  load average: 0.00, 0.08, 0.18"
+}
+2021-02-09 21:05:34,573 p=26064 u=root n=ansible | ok: [192.168.68.145] => {
+    "msg": " 06:32:37 up 1 day,  3:40,  2 users,  load average: 0.27, 0.73, 0.44"
+}
+2021-02-09 21:05:34,574 p=26064 u=root n=ansible | ok: [192.168.68.141] => {
+    "msg": " 03:26:38 up 36 min,  2 users,  load average: 0.34, 0.16, 0.18"
+}
+2021-02-09 21:05:34,638 p=26064 u=root n=ansible | ok: [192.168.68.157] => {
+    "msg": " 03:26:38 up 36 min,  2 users,  load average: 0.16, 0.05, 0.06"
+}
+2021-02-09 21:05:34,697 p=26064 u=root n=ansible | ok: [192.168.68.142] => {
+    "msg": " 03:26:40 up 36 min,  2 users,  load average: 0.09, 0.04, 0.05"
+}
+2021-02-09 21:05:34,749 p=26064 u=root n=ansible | TASK [Reboot node and stop polling.] *********************************************************************************************
+2021-02-09 21:05:38,356 p=26064 u=root n=ansible | changed: [192.168.68.134]
+2021-02-09 21:05:38,397 p=26064 u=root n=ansible | changed: [192.168.68.145]
+2021-02-09 21:05:38,423 p=26064 u=root n=ansible | changed: [192.168.68.144]
+2021-02-09 21:05:38,882 p=26064 u=root n=ansible | changed: [192.168.68.141]
+2021-02-09 21:05:39,067 p=26064 u=root n=ansible | changed: [192.168.68.157]
+2021-02-09 21:05:40,680 p=26064 u=root n=ansible | changed: [192.168.68.142]
+2021-02-09 21:05:40,762 p=26064 u=root n=ansible | TASK [wait for host to finish reb00t] ********************************************************************************************
+2021-02-09 21:06:20,902 p=26064 u=root n=ansible | ok: [192.168.68.145]
+2021-02-09 21:06:22,145 p=26064 u=root n=ansible | ok: [192.168.68.134]
+2021-02-09 21:07:04,504 p=26064 u=root n=ansible | ok: [192.168.68.142]
+2021-02-09 21:07:27,727 p=26064 u=root n=ansible | ok: [192.168.68.141]
+2021-02-09 21:07:31,227 p=26064 u=root n=ansible | ok: [192.168.68.157]
+2021-02-09 21:10:47,596 p=26064 u=root n=ansible | fatal: [192.168.68.144]: FAILED! => {"changed": false, "elapsed": 300, "msg": "Timeout when waiting for search string OpenSSH in 192.168.68.144:22"}
+2021-02-09 21:10:47,656 p=26064 u=root n=ansible | TASK [Check the uptime post reboot] **********************************************************************************************
+2021-02-09 21:10:49,897 p=26064 u=root n=ansible | changed: [192.168.68.134]
+2021-02-09 21:10:49,911 p=26064 u=root n=ansible | changed: [192.168.68.145]
+2021-02-09 21:10:52,882 p=26064 u=root n=ansible | changed: [192.168.68.142]
+2021-02-09 21:10:53,252 p=26064 u=root n=ansible | changed: [192.168.68.157]
+2021-02-09 21:10:55,637 p=26064 u=root n=ansible | changed: [192.168.68.141]
+2021-02-09 21:10:55,687 p=26064 u=root n=ansible | TASK [debug] *********************************************************************************************************************
+2021-02-09 21:10:56,304 p=26064 u=root n=ansible | ok: [192.168.68.134] => {
+    "msg": " 03:31:33 up 4 min,  1 user,  load average: 0.18, 0.14, 0.07"
+}
+2021-02-09 21:10:56,306 p=26064 u=root n=ansible | ok: [192.168.68.145] => {
+    "msg": " 03:31:33 up 4 min,  1 user,  load average: 0.03, 0.15, 0.08"
+}
+2021-02-09 21:10:56,308 p=26064 u=root n=ansible | ok: [192.168.68.141] => {
+    "msg": " 03:31:38 up 4 min,  2 users,  load average: 0.29, 0.70, 0.37"
+}
+2021-02-09 21:10:56,393 p=26064 u=root n=ansible | ok: [192.168.68.157] => {
+    "msg": " 03:31:36 up 4 min,  1 user,  load average: 0.16, 0.36, 0.20"
+}
+2021-02-09 21:10:56,455 p=26064 u=root n=ansible | ok: [192.168.68.142] => {
+    "msg": " 03:31:36 up 4 min,  1 user,  load average: 0.10, 0.11, 0.05"
+}
+2021-02-09 21:10:56,464 p=26064 u=root n=ansible | PLAY RECAP ***********************************************************************************************************************
+2021-02-09 21:10:56,465 p=26064 u=root n=ansible | 192.168.68.134             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:10:56,465 p=26064 u=root n=ansible | 192.168.68.141             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:10:56,466 p=26064 u=root n=ansible | 192.168.68.142             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:10:56,466 p=26064 u=root n=ansible | 192.168.68.144             : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:10:56,467 p=26064 u=root n=ansible | 192.168.68.145             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:10:56,467 p=26064 u=root n=ansible | 192.168.68.157             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:15:26,361 p=26491 u=root n=ansible | PLAY [patching] ****************************************************************
+2021-02-09 21:15:26,398 p=26491 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2021-02-09 21:15:32,973 p=26491 u=root n=ansible | ok: [192.168.68.145]
+2021-02-09 21:15:33,110 p=26491 u=root n=ansible | ok: [192.168.68.150]
+2021-02-09 21:15:33,167 p=26491 u=root n=ansible | ok: [192.168.68.134]
+2021-02-09 21:15:34,029 p=26491 u=root n=ansible | ok: [192.168.68.157]
+2021-02-09 21:15:38,757 p=26491 u=root n=ansible | ok: [192.168.68.142]
+2021-02-09 21:15:44,660 p=26491 u=root n=ansible | ok: [192.168.68.141]
+2021-02-09 21:15:44,715 p=26491 u=root n=ansible | TASK [Check the uptime prior reboot] *******************************************
+2021-02-09 21:15:47,548 p=26491 u=root n=ansible | changed: [192.168.68.150]
+2021-02-09 21:15:47,709 p=26491 u=root n=ansible | changed: [192.168.68.134]
+2021-02-09 21:15:47,727 p=26491 u=root n=ansible | changed: [192.168.68.145]
+2021-02-09 21:15:47,857 p=26491 u=root n=ansible | changed: [192.168.68.157]
+2021-02-09 21:15:48,054 p=26491 u=root n=ansible | changed: [192.168.68.141]
+2021-02-09 21:15:48,823 p=26491 u=root n=ansible | changed: [192.168.68.142]
+2021-02-09 21:15:48,873 p=26491 u=root n=ansible | TASK [debug] *******************************************************************
+2021-02-09 21:15:49,332 p=26491 u=root n=ansible | ok: [192.168.68.134] => {
+    "msg": " 03:36:08 up 9 min,  2 users,  load average: 0.14, 0.09, 0.06"
+}
+2021-02-09 21:15:49,509 p=26491 u=root n=ansible | ok: [192.168.68.150] => {
+    "msg": " 03:36:08 up 9 min,  2 users,  load average: 0.21, 0.11, 0.08"
+}
+2021-02-09 21:15:49,661 p=26491 u=root n=ansible | ok: [192.168.68.145] => {
+    "msg": " 03:36:08 up 9 min,  1 user,  load average: 0.07, 0.07, 0.06"
+}
+2021-02-09 21:15:49,663 p=26491 u=root n=ansible | ok: [192.168.68.141] => {
+    "msg": " 03:36:08 up 8 min,  2 users,  load average: 0.58, 0.43, 0.33"
+}
+2021-02-09 21:15:49,743 p=26491 u=root n=ansible | ok: [192.168.68.157] => {
+    "msg": " 03:36:08 up 8 min,  2 users,  load average: 0.08, 0.16, 0.15"
+}
+2021-02-09 21:15:49,808 p=26491 u=root n=ansible | ok: [192.168.68.142] => {
+    "msg": " 03:36:09 up 8 min,  2 users,  load average: 0.07, 0.06, 0.05"
+}
+2021-02-09 21:15:49,856 p=26491 u=root n=ansible | TASK [Reboot node and stop polling.] *******************************************
+2021-02-09 21:15:53,282 p=26491 u=root n=ansible | changed: [192.168.68.150]
+2021-02-09 21:15:53,323 p=26491 u=root n=ansible | changed: [192.168.68.134]
+2021-02-09 21:15:53,326 p=26491 u=root n=ansible | changed: [192.168.68.145]
+2021-02-09 21:15:53,667 p=26491 u=root n=ansible | changed: [192.168.68.157]
+2021-02-09 21:15:54,046 p=26491 u=root n=ansible | changed: [192.168.68.141]
+2021-02-09 21:15:55,340 p=26491 u=root n=ansible | changed: [192.168.68.142]
+2021-02-09 21:15:55,421 p=26491 u=root n=ansible | TASK [wait for host to finish reb00t] ******************************************
+2021-02-09 21:16:36,513 p=26491 u=root n=ansible | ok: [192.168.68.145]
+2021-02-09 21:16:38,134 p=26491 u=root n=ansible | ok: [192.168.68.134]
+2021-02-09 21:17:05,118 p=26491 u=root n=ansible | ok: [192.168.68.142]
+2021-02-09 21:17:29,853 p=26491 u=root n=ansible | ok: [192.168.68.141]
+2021-02-09 21:17:34,994 p=26491 u=root n=ansible | ok: [192.168.68.157]
+2021-02-09 21:19:39,717 p=26491 u=root n=ansible |  [ERROR]: User interrupted execution
+
+2021-02-09 21:26:04,490 p=26863 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: No JSON object could be decoded
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/etc/ansible/cleanup.yml': line 7, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - name: Remove old kernels from the OS keeping only the last most recent two
+    command: /usr/bin/package-cleanup --oldkernels --count=2 -y
+    ^ here
+
+2021-02-09 21:27:46,132 p=26873 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: No JSON object could be decoded
+
+Syntax Error while loading YAML.
+  found character that cannot start any token
+
+The error appears to be in '/etc/ansible/cleanup.yml': line 6, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+	yum:
+^ here
+There appears to be a tab character at the start of the line.
+
+YAML does not use tabs for formatting. Tabs should be replaced with spaces.
+
+For example:
+    - name: update tooling
+      vars:
+        version: 1.2.3
+#    ^--- there is a tab there.
+
+Should be written as:
+    - name: update tooling
+      vars:
+        version: 1.2.3
+# ^--- all spaces here.
+
+2021-02-09 21:28:07,613 p=26883 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: No JSON object could be decoded
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/etc/ansible/cleanup.yml': line 8, column 12, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- name: Remove old kernels from the OS keeping only the last most recent two
+    command: /usr/bin/package-cleanup --oldkernels --count=2 -y
+           ^ here
+
+2021-02-09 21:29:32,536 p=26892 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: No JSON object could be decoded
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/etc/ansible/cleanup.yml': line 7, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  - name: Remove old kernels from the OS keeping only the last most recent two
+  ^ here
+
+2021-02-09 21:29:49,524 p=26901 u=root n=ansible | PLAY [patching] ******************************************************************************************************************
+2021-02-09 21:29:49,558 p=26901 u=root n=ansible | TASK [Gathering Facts] ***********************************************************************************************************
+2021-02-09 21:29:57,245 p=26901 u=root n=ansible | ok: [192.168.68.157]
+2021-02-09 21:29:58,518 p=26901 u=root n=ansible | ok: [192.168.68.144]
+2021-02-09 21:29:58,613 p=26901 u=root n=ansible | ok: [192.168.68.145]
+2021-02-09 21:29:58,716 p=26901 u=root n=ansible | ok: [192.168.68.134]
+2021-02-09 21:30:00,873 p=26901 u=root n=ansible | ok: [192.168.68.142]
+2021-02-09 21:30:02,046 p=26901 u=root n=ansible | ok: [192.168.68.141]
+2021-02-09 21:30:02,060 p=26901 u=root n=ansible | ERROR! the field 'hosts' is required but was not set
+2021-02-09 21:31:34,911 p=27007 u=root n=ansible | PLAY [patching] ******************************************************************************************************************
+2021-02-09 21:31:34,946 p=27007 u=root n=ansible | TASK [Gathering Facts] ***********************************************************************************************************
+2021-02-09 21:31:43,214 p=27007 u=root n=ansible | ok: [192.168.68.157]
+2021-02-09 21:31:43,990 p=27007 u=root n=ansible | ok: [192.168.68.144]
+2021-02-09 21:31:44,051 p=27007 u=root n=ansible | ok: [192.168.68.145]
+2021-02-09 21:31:44,098 p=27007 u=root n=ansible | ok: [192.168.68.134]
+2021-02-09 21:31:46,280 p=27007 u=root n=ansible | ok: [192.168.68.142]
+2021-02-09 21:31:47,625 p=27007 u=root n=ansible | ok: [192.168.68.141]
+2021-02-09 21:31:47,641 p=27007 u=root n=ansible | ERROR! the field 'hosts' is required but was not set
+2021-02-09 21:32:04,357 p=27102 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: No JSON object could be decoded
+
+Syntax Error while loading YAML.
+  did not find expected <document start>
+
+The error appears to be in '/etc/ansible/cleanup.yml': line 3, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+ hosts: patching
+- tasks:
+^ here
+
+2021-02-09 21:32:23,385 p=27111 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: No JSON object could be decoded
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/etc/ansible/cleanup.yml': line 4, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- tasks:
+i- hosts: patching
+^ here
+
+2021-02-09 21:32:32,763 p=27120 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: No JSON object could be decoded
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/etc/ansible/cleanup.yml': line 5, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- hosts: patching
+  - name: Remove old kernels from the OS keeping only the last most recent two
+  ^ here
+
+2021-02-09 21:33:05,528 p=27129 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: No JSON object could be decoded
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/etc/ansible/cleanup.yml': line 5, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  - name: Remove old kernels from the OS keeping only the last most recent two
+   command: /usr/bin/package-cleanup --oldkernels --count=2 -y
+   ^ here
+
+2021-02-09 21:33:41,388 p=27140 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: No JSON object could be decoded
+
+Syntax Error while loading YAML.
+  found a tab character that violate intendation
+
+The error appears to be in '/etc/ansible/cleanup.yml': line 5, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  - name: Remove old kernels from the OS keeping only the last most recent two
+	   command: /usr/bin/package-cleanup --oldkernels --count=2 -y
+^ here
+There appears to be a tab character at the start of the line.
+
+YAML does not use tabs for formatting. Tabs should be replaced with spaces.
+
+For example:
+    - name: update tooling
+      vars:
+        version: 1.2.3
+#    ^--- there is a tab there.
+
+Should be written as:
+    - name: update tooling
+      vars:
+        version: 1.2.3
+# ^--- all spaces here.
+
+2021-02-09 21:34:01,567 p=27149 u=root n=ansible | PLAY [patching] ******************************************************************************************************************
+2021-02-09 21:34:01,603 p=27149 u=root n=ansible | TASK [Gathering Facts] ***********************************************************************************************************
+2021-02-09 21:34:08,491 p=27149 u=root n=ansible | ok: [192.168.68.157]
+2021-02-09 21:34:09,497 p=27149 u=root n=ansible | ok: [192.168.68.144]
+2021-02-09 21:34:09,557 p=27149 u=root n=ansible | ok: [192.168.68.145]
+2021-02-09 21:34:09,626 p=27149 u=root n=ansible | ok: [192.168.68.134]
+2021-02-09 21:34:11,582 p=27149 u=root n=ansible | ok: [192.168.68.142]
+2021-02-09 21:34:12,442 p=27149 u=root n=ansible | ok: [192.168.68.141]
+2021-02-09 21:34:12,455 p=27149 u=root n=ansible | ERROR! the field 'hosts' is required but was not set
+2021-02-09 21:35:10,748 p=27244 u=root n=ansible | ERROR! conflicting action statements: hosts, command
+
+The error appears to be in '/etc/ansible/cleanup.yml': line 4, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- tasks:
+  - name: Remove old kernels from the OS keeping only the last most recent two
+    ^ here
+
+2021-02-09 21:35:36,777 p=27253 u=root n=ansible | ERROR! conflicting action statements: hosts, command
+
+The error appears to be in '/etc/ansible/cleanup.yml': line 4, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- tasks:
+  - name: 'Remove old kernels from the OS keeping only the last most recent two'
+    ^ here
+
+2021-02-09 21:36:01,266 p=27262 u=root n=ansible | PLAY [patching] ******************************************************************************************************************
+2021-02-09 21:36:01,301 p=27262 u=root n=ansible | TASK [Gathering Facts] ***********************************************************************************************************
+2021-02-09 21:36:08,299 p=27262 u=root n=ansible | ok: [192.168.68.157]
+2021-02-09 21:36:09,064 p=27262 u=root n=ansible | ok: [192.168.68.144]
+2021-02-09 21:36:09,222 p=27262 u=root n=ansible | ok: [192.168.68.134]
+2021-02-09 21:36:09,275 p=27262 u=root n=ansible | ok: [192.168.68.145]
+2021-02-09 21:36:11,121 p=27262 u=root n=ansible | ok: [192.168.68.142]
+2021-02-09 21:36:12,198 p=27262 u=root n=ansible | ok: [192.168.68.141]
+2021-02-09 21:36:12,212 p=27262 u=root n=ansible | ERROR! the field 'hosts' is required but was not set
+2021-02-09 21:37:43,568 p=27358 u=root n=ansible | PLAY [Apply OS updates and patches on RHEL7x] ************************************************************************************
+2021-02-09 21:37:43,609 p=27358 u=root n=ansible | TASK [Update / upgrade all existing installed packages] **************************************************************************
+2021-02-09 21:37:58,898 p=27358 u=root n=ansible | ok: [192.168.68.134]
+2021-02-09 21:37:59,235 p=27358 u=root n=ansible | ok: [192.168.68.141]
+2021-02-09 21:37:59,521 p=27358 u=root n=ansible | ok: [192.168.68.157]
+2021-02-09 21:38:07,298 p=27358 u=root n=ansible | ok: [192.168.68.142]
+2021-02-09 21:38:29,090 p=27358 u=root n=ansible | ok: [192.168.68.145]
+2021-02-09 21:38:34,033 p=27358 u=root n=ansible | ok: [192.168.68.144]
+2021-02-09 21:38:34,043 p=27358 u=root n=ansible | TASK [Install yum-utils if that package is not already present or update existing if needed] *************************************
+2021-02-09 21:38:41,984 p=27358 u=root n=ansible | ok: [192.168.68.141]
+2021-02-09 21:38:42,459 p=27358 u=root n=ansible | ok: [192.168.68.157]
+2021-02-09 21:38:45,030 p=27358 u=root n=ansible | ok: [192.168.68.134]
+2021-02-09 21:38:46,346 p=27358 u=root n=ansible | ok: [192.168.68.142]
+2021-02-09 21:38:52,114 p=27358 u=root n=ansible | ok: [192.168.68.144]
+2021-02-09 21:38:52,240 p=27358 u=root n=ansible | ok: [192.168.68.145]
+2021-02-09 21:38:52,254 p=27358 u=root n=ansible | TASK [Remove old kernels from the OS keeping only the last most recent two] ******************************************************
+2021-02-09 21:39:13,558 p=27358 u=root n=ansible | changed: [192.168.68.157]
+2021-02-09 21:39:31,975 p=27358 u=root n=ansible | changed: [192.168.68.142]
+2021-02-09 21:39:54,557 p=27358 u=root n=ansible | changed: [192.168.68.134]
+2021-02-09 21:39:54,770 p=27358 u=root n=ansible | changed: [192.168.68.144]
+2021-02-09 21:39:55,132 p=27358 u=root n=ansible | changed: [192.168.68.145]
+2021-02-09 21:39:58,222 p=27358 u=root n=ansible | changed: [192.168.68.141]
+2021-02-09 21:39:58,232 p=27358 u=root n=ansible | PLAY RECAP ***********************************************************************************************************************
+2021-02-09 21:39:58,233 p=27358 u=root n=ansible | 192.168.68.134             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:39:58,233 p=27358 u=root n=ansible | 192.168.68.141             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:39:58,234 p=27358 u=root n=ansible | 192.168.68.142             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:39:58,234 p=27358 u=root n=ansible | 192.168.68.144             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:39:58,234 p=27358 u=root n=ansible | 192.168.68.145             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:39:58,235 p=27358 u=root n=ansible | 192.168.68.157             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:40:29,779 p=27617 u=root n=ansible | PLAY [Apply OS updates and patches on RHEL7x] ************************************************************************************
+2021-02-09 21:40:29,818 p=27617 u=root n=ansible | TASK [Update / upgrade all existing installed packages] **************************************************************************
+2021-02-09 21:40:41,524 p=27617 u=root n=ansible | ok: [192.168.68.141]
+2021-02-09 21:40:41,876 p=27617 u=root n=ansible | ok: [192.168.68.157]
+2021-02-09 21:40:44,884 p=27617 u=root n=ansible | ok: [192.168.68.134]
+2021-02-09 21:40:48,474 p=27617 u=root n=ansible | ok: [192.168.68.142]
+2021-02-09 21:40:53,758 p=27617 u=root n=ansible | ok: [192.168.68.144]
+2021-02-09 21:40:53,905 p=27617 u=root n=ansible | ok: [192.168.68.145]
+2021-02-09 21:41:02,759 p=27617 u=root n=ansible | ok: [192.168.68.143]
+2021-02-09 21:41:02,771 p=27617 u=root n=ansible | TASK [Install yum-utils if that package is not already present or update existing if needed] *************************************
+2021-02-09 21:41:10,743 p=27617 u=root n=ansible | ok: [192.168.68.141]
+2021-02-09 21:41:11,146 p=27617 u=root n=ansible | ok: [192.168.68.157]
+2021-02-09 21:41:13,693 p=27617 u=root n=ansible | ok: [192.168.68.134]
+2021-02-09 21:41:16,281 p=27617 u=root n=ansible | ok: [192.168.68.142]
+2021-02-09 21:41:22,737 p=27617 u=root n=ansible | ok: [192.168.68.144]
+2021-02-09 21:41:22,908 p=27617 u=root n=ansible | ok: [192.168.68.145]
+2021-02-09 21:41:31,438 p=27617 u=root n=ansible | ok: [192.168.68.143]
+2021-02-09 21:41:31,452 p=27617 u=root n=ansible | TASK [Remove old kernels from the OS keeping only the last most recent two] ******************************************************
+2021-02-09 21:41:36,103 p=27617 u=root n=ansible | changed: [192.168.68.157]
+2021-02-09 21:41:36,179 p=27617 u=root n=ansible | changed: [192.168.68.141]
+2021-02-09 21:41:38,368 p=27617 u=root n=ansible | changed: [192.168.68.144]
+2021-02-09 21:41:38,433 p=27617 u=root n=ansible | changed: [192.168.68.134]
+2021-02-09 21:41:38,459 p=27617 u=root n=ansible | changed: [192.168.68.145]
+2021-02-09 21:41:38,686 p=27617 u=root n=ansible | changed: [192.168.68.142]
+2021-02-09 21:42:19,044 p=27617 u=root n=ansible | changed: [192.168.68.143]
+2021-02-09 21:42:19,055 p=27617 u=root n=ansible | PLAY RECAP ***********************************************************************************************************************
+2021-02-09 21:42:19,056 p=27617 u=root n=ansible | 192.168.68.134             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:42:19,056 p=27617 u=root n=ansible | 192.168.68.141             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:42:19,057 p=27617 u=root n=ansible | 192.168.68.142             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:42:19,057 p=27617 u=root n=ansible | 192.168.68.143             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:42:19,057 p=27617 u=root n=ansible | 192.168.68.144             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:42:19,058 p=27617 u=root n=ansible | 192.168.68.145             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:42:19,058 p=27617 u=root n=ansible | 192.168.68.157             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:45:23,372 p=5706 u=root n=ansible | PLAY [patching] ******************************************************************************************************************
+2021-02-09 21:45:23,416 p=5706 u=root n=ansible | TASK [Gathering Facts] ***********************************************************************************************************
+2021-02-09 21:45:29,824 p=5706 u=root n=ansible | ok: [192.168.68.157]
+2021-02-09 21:45:30,125 p=5706 u=root n=ansible | ok: [192.168.68.144]
+2021-02-09 21:45:30,204 p=5706 u=root n=ansible | ok: [192.168.68.134]
+2021-02-09 21:45:30,254 p=5706 u=root n=ansible | ok: [192.168.68.145]
+2021-02-09 21:45:33,596 p=5706 u=root n=ansible | ok: [192.168.68.142]
+2021-02-09 21:45:34,974 p=5706 u=root n=ansible | ok: [192.168.68.141]
+2021-02-09 21:45:35,026 p=5706 u=root n=ansible | TASK [Check the uptime prior reboot] *********************************************************************************************
+2021-02-09 21:45:37,708 p=5706 u=root n=ansible | changed: [192.168.68.157]
+2021-02-09 21:45:37,852 p=5706 u=root n=ansible | changed: [192.168.68.141]
+2021-02-09 21:45:37,961 p=5706 u=root n=ansible | changed: [192.168.68.144]
+2021-02-09 21:45:37,987 p=5706 u=root n=ansible | changed: [192.168.68.134]
+2021-02-09 21:45:37,990 p=5706 u=root n=ansible | changed: [192.168.68.145]
+2021-02-09 21:45:38,904 p=5706 u=root n=ansible | changed: [192.168.68.142]
+2021-02-09 21:45:38,956 p=5706 u=root n=ansible | TASK [debug] *********************************************************************************************************************
+2021-02-09 21:45:39,724 p=5706 u=root n=ansible | ok: [192.168.68.134] => {
+    "msg": " 04:03:40 up 27 min,  2 users,  load average: 0.01, 0.14, 0.12"
+}
+2021-02-09 21:45:39,726 p=5706 u=root n=ansible | ok: [192.168.68.144] => {
+    "msg": " 04:03:40 up 27 min,  2 users,  load average: 0.10, 0.22, 0.16"
+}
+2021-02-09 21:45:39,727 p=5706 u=root n=ansible | ok: [192.168.68.145] => {
+    "msg": " 04:03:40 up 27 min,  2 users,  load average: 0.17, 0.25, 0.18"
+}
+2021-02-09 21:45:39,729 p=5706 u=root n=ansible | ok: [192.168.68.141] => {
+    "msg": " 04:03:40 up 26 min,  1 user,  load average: 0.37, 0.20, 0.18"
+}
+2021-02-09 21:45:39,814 p=5706 u=root n=ansible | ok: [192.168.68.157] => {
+    "msg": " 04:03:40 up 26 min,  1 user,  load average: 0.08, 0.06, 0.08"
+}
+2021-02-09 21:45:39,863 p=5706 u=root n=ansible | ok: [192.168.68.142] => {
+    "msg": " 04:03:41 up 27 min,  1 user,  load average: 0.22, 0.09, 0.06"
+}
+2021-02-09 21:45:39,925 p=5706 u=root n=ansible | TASK [Reboot node and stop polling.] *********************************************************************************************
+2021-02-09 21:45:43,151 p=5706 u=root n=ansible | changed: [192.168.68.145]
+2021-02-09 21:45:43,275 p=5706 u=root n=ansible | changed: [192.168.68.134]
+2021-02-09 21:45:43,286 p=5706 u=root n=ansible | changed: [192.168.68.144]
+2021-02-09 21:45:43,946 p=5706 u=root n=ansible | changed: [192.168.68.157]
+2021-02-09 21:45:44,277 p=5706 u=root n=ansible | changed: [192.168.68.141]
+2021-02-09 21:45:44,984 p=5706 u=root n=ansible | changed: [192.168.68.142]
+2021-02-09 21:45:45,061 p=5706 u=root n=ansible | TASK [wait for host to finish reb00t] ********************************************************************************************
+2021-02-09 21:46:26,790 p=5706 u=root n=ansible | ok: [192.168.68.145]
+2021-02-09 21:46:34,987 p=5706 u=root n=ansible | ok: [192.168.68.134]
+2021-02-09 21:46:35,281 p=5706 u=root n=ansible | ok: [192.168.68.141]
+2021-02-09 21:46:37,735 p=5706 u=root n=ansible | ok: [192.168.68.142]
+2021-02-09 21:47:02,796 p=5706 u=root n=ansible | ok: [192.168.68.157]
+2021-02-09 21:50:52,656 p=5706 u=root n=ansible | fatal: [192.168.68.144]: FAILED! => {"changed": false, "elapsed": 301, "msg": "Timeout when waiting for search string OpenSSH in 192.168.68.144:22"}
+2021-02-09 21:50:52,707 p=5706 u=root n=ansible | TASK [Check the uptime post reboot] **********************************************************************************************
+2021-02-09 21:50:55,133 p=5706 u=root n=ansible | changed: [192.168.68.134]
+2021-02-09 21:50:55,180 p=5706 u=root n=ansible | changed: [192.168.68.145]
+2021-02-09 21:50:55,344 p=5706 u=root n=ansible | changed: [192.168.68.141]
+2021-02-09 21:50:55,400 p=5706 u=root n=ansible | changed: [192.168.68.157]
+2021-02-09 21:50:55,621 p=5706 u=root n=ansible | changed: [192.168.68.142]
+2021-02-09 21:50:55,673 p=5706 u=root n=ansible | TASK [debug] *********************************************************************************************************************
+2021-02-09 21:50:56,374 p=5706 u=root n=ansible | ok: [192.168.68.134] => {
+    "msg": " 04:08:33 up 4 min,  1 user,  load average: 0.03, 0.09, 0.05"
+}
+2021-02-09 21:50:56,376 p=5706 u=root n=ansible | ok: [192.168.68.145] => {
+    "msg": " 04:08:33 up 4 min,  1 user,  load average: 0.02, 0.13, 0.07"
+}
+2021-02-09 21:50:56,378 p=5706 u=root n=ansible | ok: [192.168.68.141] => {
+    "msg": " 04:08:33 up 4 min,  1 user,  load average: 0.04, 0.20, 0.12"
+}
+2021-02-09 21:50:56,453 p=5706 u=root n=ansible | ok: [192.168.68.157] => {
+    "msg": " 04:08:34 up 4 min,  1 user,  load average: 0.02, 0.12, 0.06"
+}
+2021-02-09 21:50:56,502 p=5706 u=root n=ansible | ok: [192.168.68.142] => {
+    "msg": " 04:08:34 up 4 min,  1 user,  load average: 0.00, 0.03, 0.02"
+}
+2021-02-09 21:50:56,511 p=5706 u=root n=ansible | PLAY RECAP ***********************************************************************************************************************
+2021-02-09 21:50:56,512 p=5706 u=root n=ansible | 192.168.68.134             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:50:56,512 p=5706 u=root n=ansible | 192.168.68.141             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:50:56,512 p=5706 u=root n=ansible | 192.168.68.142             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:50:56,513 p=5706 u=root n=ansible | 192.168.68.144             : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:50:56,513 p=5706 u=root n=ansible | 192.168.68.145             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-02-09 21:50:56,513 p=5706 u=root n=ansible | 192.168.68.157             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

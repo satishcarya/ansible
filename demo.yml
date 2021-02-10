@@ -1,0 +1,8 @@
+---
+- hosts: macservers
+
+  tasks:
+    - name: install package
+      yum:
+        name: htop
+        state: present

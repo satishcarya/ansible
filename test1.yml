@@ -1,0 +1,9 @@
+---
+- hosts: testservers1
+
+  tasks:
+   - name: install package
+     yum:
+       name: htop
+       state: absent
+
