@@ -1,0 +1,128 @@
+---
+
+################################################################################
+#  description: Ensure the Operations Flight Recorder (OFR) server groups exist in Control at CenturyLink Cloud
+#  usage: ansible-playbook CLC_Ensure-OFR-Server-Groups-Exist-in-Control-playbook.yml --extra-vars 'DC=YourDCGoesHere'
+#  author: Ernest G. Wilson II <ErnestGWilsonII@gmail.com> (https://github.com/ernestgwilsonii)
+#  license: MIT
+################################################################################
+
+
+# Ansible Playbook options
+# REF: http://docs.ansible.com/ansible/playbooks.html
+#####################################################
+
+- name: Ensure the Operations Flight Recorder (OFR) server groups exist in Control
+  hosts: localhost
+  gather_facts: False
+  connection: local
+  tasks:
+
+
+# clc_group - Create/delete Server Groups at Centurylink Cloud
+# REF: http://docs.ansible.com/ansible/clc_group_module.html
+############################################################
+
+    - name: Ensure the OFR servers group exists in Control in "{{DC}}" 
+      clc_group:
+        location: "{{DC}}"
+        name: "OFR"
+        description: "Operations Flight Recorder"
+        state: present
+      register: clc
+
+    - name: Ensure the OFR-NGINX server group exists below the OFR group in Control in "{{DC}}" 
+      clc_group:
+        location: "{{DC}}"
+        name: "OFR-NGINX"
+        description: "NGINX in HA with Keepalived group"
+        parent: "OFR"
+        state: present
+
+    - name: Ensure the OFR-Logstash server group exists below the OFR group in Control in "{{DC}}" 
+      clc_group:
+        location: "{{DC}}"
+        name: "OFR-Logstash"
+        description: "Logstash group"
+        parent: "OFR"
+        state: present
+
+    - name: Ensure the OFR-Kafka server group exists below the OFR group in Control in "{{DC}}" 
+      clc_group:
+        location: "{{DC}}"
+        name: "OFR-Kafka"
+        description: "Kafka group"
+        parent: "OFR"
+        state: present
+
+    - name: Ensure the OFR-Elasticsearch server group exists below the OFR group in Control in "{{DC}}" 
+      clc_group:
+        location: "{{DC}}"
+        name: "OFR-Elasticsearch"
+        description: "Elasticsearch group"
+        parent: "OFR"
+        state: present
+
+    - name: Ensure the OFR-ElasticsearchClientNodes server group exists below the Elasticsearch group in Control in "{{DC}}" 
+      clc_group:
+        location: "{{DC}}"
+        name: "OFR-ElasticsearchClientNodes"
+        description: "Elasticsearch Client Nodes group"
+        parent: "OFR-Elasticsearch"
+        state: present
+
+    - name: Ensure the OFR-ElasticsearchMasterNodes server group exists below the Elasticsearch group in Control in "{{DC}}" 
+      clc_group:
+        location: "{{DC}}"
+        name: "OFR-ElasticsearchMasterNodes"
+        description: "Elasticsearch Master Nodes group"
+        parent: "OFR-Elasticsearch"
+        state: present
+
+    - name: Ensure the OFR-ElasticsearchDataNodes server group exists below the Elasticsearch group in Control in "{{DC}}" 
+      clc_group:
+        location: "{{DC}}"
+        name: "OFR-ElasticsearchDataNodes"
+        description: "Elasticsearch Data Nodes group"
+        parent: "OFR-Elasticsearch"
+        state: present
+
+    - name: Ensure the OFR-Kibana server group exists below the OFR group in Control in "{{DC}}" 
+      clc_group:
+        location: "{{DC}}"
+        name: "OFR-Kibana"
+        description: "Kibana group"
+        parent: "OFR"
+        state: present
+
+    - name: Ensure the OFR-Graylog server group exists below the OFR group in Control in "{{DC}}" 
+      clc_group:
+        location: "{{DC}}"
+        name: "OFR-Graylog"
+        description: "Graylog group"
+        parent: "OFR"
+        state: present
+
+    - name: Ensure the OFR-MongoDB server group exists below the OFR-Graylog group in Control in "{{DC}}" 
+      clc_group:
+        location: "{{DC}}"
+        name: "OFR-MongoDB"
+        description: "MongoDB Cluster for Graylog group"
+        parent: "OFR-Graylog"
+        state: present
+
+    - name: Ensure the OFR-StatsD server group exists below the OFR group in Control in "{{DC}}" 
+      clc_group:
+        location: "{{DC}}"
+        name: "OFR-StatsD"
+        description: "StatsD group"
+        parent: "OFR"
+        state: present
+
+    - name: Ensure the OFR-Graphite server group exists below the OFR-StatsD group in Control in "{{DC}}" 
+      clc_group:
+        location: "{{DC}}"
+        name: "OFR-Graphite"
+        description: "Graphite for StatsD group"
+        parent: "OFR-StatsD"
+        state: present

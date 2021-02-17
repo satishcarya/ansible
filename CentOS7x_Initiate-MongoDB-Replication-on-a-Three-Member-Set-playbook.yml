@@ -1,0 +1,51 @@
+---
+
+################################################################################
+#  description: Initiate MongoDB replication on three (3) speciic MongoDB 3x hosts on CentOS7x
+#  usage: ansible-playbook CentOS7x_Initiate-MongoDB-Replication-on-a-Three-Member-Set-playbook.yml --extra-vars 'ReplicaMaster=MongoReplicaMasterHostNameOrIpGoesHere ReplicaSlave1=MongoReplicaSlave1HostNameOrIpGoesHere ReplicaSlave2=MongoReplicaSlave2HostNameOrIpGoesHere MongoAdminPassword=mongodb'
+#  author: Ernest G. Wilson II <ErnestGWilsonII@gmail.com> (https://github.com/ernestgwilsonii)
+#  license: MIT
+################################################################################
+
+
+# Ansible Playbook options
+# REF: http://docs.ansible.com/ansible/playbooks.html
+#####################################################
+
+- name: Preparing to start the intial MongoDB replication on three MongoDB hosts
+  hosts: "{{ReplicaMaster}}"
+  serial: "100%"
+  gather_facts: False
+  tasks:
+
+
+# Use the template module to populate files with data
+# REF: http://docs.ansible.com/ansible/template_module.html
+###########################################################
+
+# Copy the replication initialization script to the master /tmp/ directory
+  - name: Copy the initial replication script from Ansible to the host that will be the starting MongoDB replication master
+    template:
+      src=templates/MongoDB/initiateReplication.js.j2
+      dest=/tmp/initiateReplication.js
+      owner=root
+      group=mongod
+      mode=0644
+
+
+# Execute raw command(s)
+# REF: http://docs.ansible.com/ansible/raw_module.html
+##########################################################
+
+  - name: Initializing MongoDB replication
+    raw: mongo -ssl --sslAllowInvalidCertificates --port 27017 -u "admin" -p "{{MongoAdminPassword|default ('mongodb')}}" --authenticationDatabase "admin" < /tmp/initiateReplication.js
+
+
+# Use the file module
+# REF: http://docs.ansible.com/ansible/file_module.html
+#######################################################
+
+  - name: Remove the temporary file from the replication master - rm /tmp/initiateReplication.js
+    file:
+      path: /tmp/initiateReplication.js
+      state: absent
