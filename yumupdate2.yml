@@ -13,7 +13,7 @@
 #####################################################
 
 - name: Apply OS updates and patches on RHEL7x
-  hosts: patching
+  hosts: localhost
   serial: "100%"
   gather_facts: False
   tasks:

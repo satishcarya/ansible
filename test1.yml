@@ -1,5 +1,5 @@
 ---
-- hosts: testservers1
+- hosts: localhost
 
   tasks:
    - name: install package
