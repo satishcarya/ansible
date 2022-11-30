@@ -1,0 +1,10 @@
+hosts: localhost
+tasks:
+             - name: Install web service
+               yum:
+                    name: httpd
+                    state: present
+             - name: start web server
+               service:
+                       name:httpd
+                       state:started

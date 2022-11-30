@@ -10,11 +10,9 @@
 192.168.68.144
 192.168.68.145
 [patching]
-192.168.68.134
-192.168.68.144
-192.168.68.145
-192.168.68.141
-192.168.68.157
+192.168.68.147 ansible_connection=ssh ansible_user=root ansible_ssh_pass=Specific@11 ansible_port=22
+192.168.68.148 ansible_connection=ssh ansible_user=root ansible_ssh_pass=Specific@11 ansible_port=22
+[localhost]
 192.168.68.142
 [localhost]
 192.168.1.15
