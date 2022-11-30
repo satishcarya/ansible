@@ -737,3 +737,54 @@ The offending line appears to be:
 2021-02-09 21:50:56,513 p=5706 u=root n=ansible | 192.168.68.144             : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
 2021-02-09 21:50:56,513 p=5706 u=root n=ansible | 192.168.68.145             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2021-02-09 21:50:56,513 p=5706 u=root n=ansible | 192.168.68.157             : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-22 20:27:18,146 p=2506 u=root n=ansible | [WARNING]: Unable to parse /etc/ansible/localhost as an inventory source
+
+2022-11-22 20:27:18,146 p=2506 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2022-11-22 20:27:18,150 p=2506 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2022-11-22 20:27:19,686 p=2506 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: testservers
+
+2022-11-22 20:27:19,688 p=2506 u=root n=ansible | PLAY [testservers] ********************************************************************************************************************
+2022-11-22 20:27:19,688 p=2506 u=root n=ansible | skipping: no hosts matched
+2022-11-22 20:27:19,688 p=2506 u=root n=ansible | PLAY RECAP ****************************************************************************************************************************
+2022-11-22 20:27:47,294 p=2523 u=root n=ansible | [WARNING]: Unable to parse /etc/ansible/localhost as an inventory source
+
+2022-11-22 20:27:47,294 p=2523 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2022-11-22 20:27:47,294 p=2523 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2022-11-22 20:27:47,524 p=2523 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: testservers
+
+2022-11-22 20:27:47,525 p=2523 u=root n=ansible | PLAY [testservers] ********************************************************************************************************************
+2022-11-22 20:27:47,525 p=2523 u=root n=ansible | skipping: no hosts matched
+2022-11-22 20:27:47,525 p=2523 u=root n=ansible | PLAY RECAP ****************************************************************************************************************************
+2022-11-22 20:28:48,703 p=2594 u=root n=ansible | [WARNING]: Unable to parse /etc/ansible/localhost as an inventory source
+
+2022-11-22 20:28:48,704 p=2594 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2022-11-22 20:28:48,704 p=2594 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2022-11-22 20:28:48,932 p=2594 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: testservers
+
+2022-11-22 20:28:48,933 p=2594 u=root n=ansible | PLAY [testservers] ********************************************************************************************************************
+2022-11-22 20:28:48,933 p=2594 u=root n=ansible | skipping: no hosts matched
+2022-11-22 20:28:48,933 p=2594 u=root n=ansible | PLAY RECAP ****************************************************************************************************************************
+2022-11-22 20:28:57,830 p=2602 u=root n=ansible | PLAY [testservers] ********************************************************************************************************************
+2022-11-22 20:28:57,920 p=2602 u=root n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2022-11-22 20:29:08,434 p=2602 u=root n=ansible | fatal: [192.168.68.145]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.68.145 port 22: Connection timed out", "unreachable": true}
+2022-11-22 20:29:08,434 p=2602 u=root n=ansible | fatal: [192.168.68.144]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.68.144 port 22: Connection timed out", "unreachable": true}
+2022-11-22 20:29:08,440 p=2602 u=root n=ansible | fatal: [192.168.68.143]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.68.143 port 22: Connection timed out", "unreachable": true}
+2022-11-22 20:29:08,442 p=2602 u=root n=ansible | PLAY RECAP ****************************************************************************************************************************
+2022-11-22 20:29:08,442 p=2602 u=root n=ansible | 192.168.68.143             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-22 20:29:08,442 p=2602 u=root n=ansible | 192.168.68.144             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-22 20:29:08,442 p=2602 u=root n=ansible | 192.168.68.145             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-22 20:33:44,116 p=2685 u=root n=ansible | PLAY [testservers] ********************************************************************************************************************
+2022-11-22 20:33:44,131 p=2685 u=root n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2022-11-22 20:33:54,204 p=2685 u=root n=ansible | fatal: [192.168.68.143]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.68.143 port 22: Connection timed out", "unreachable": true}
+2022-11-22 20:33:54,214 p=2685 u=root n=ansible | fatal: [192.168.68.144]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.68.144 port 22: Connection timed out", "unreachable": true}
+2022-11-22 20:33:54,238 p=2685 u=root n=ansible | fatal: [192.168.68.145]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.68.145 port 22: Connection timed out", "unreachable": true}
+2022-11-22 20:33:54,240 p=2685 u=root n=ansible | PLAY RECAP ****************************************************************************************************************************
+2022-11-22 20:33:54,240 p=2685 u=root n=ansible | 192.168.68.143             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-22 20:33:54,240 p=2685 u=root n=ansible | 192.168.68.144             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-11-22 20:33:54,240 p=2685 u=root n=ansible | 192.168.68.145             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
