@@ -27,3 +27,6 @@
      register: UPTIME_POST_REBOOT
 
    - debug: msg={{UPTIME_POST_REBOOT.stdout}}
+
+
+
